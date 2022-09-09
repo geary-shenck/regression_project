@@ -17,7 +17,6 @@ Determine drivers of Tax Assessment for single Family homes in certain FIPS to d
 
 #### 3. Initial Questions:
 - Are the features of Tax Assessment and Year Built related?
-- Is there a significant difference in the mean between Tax Assessment and the ratio of Area to Bedrooms and Bathrooms (openess)?
 - Does each physical location (FIPS) have a signficant difference in means?
 - Does number of bathrooms have a relation with the number of bedrooms?
 - Does Tax Assessment change depending on the SQFT of a house?
