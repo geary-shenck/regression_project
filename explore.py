@@ -327,8 +327,8 @@ def pearsonr_corr_explore_plot(train,num1,num2):
 
     plt.figure(figsize=(10,6))
     plt.scatter( train[num1], train[num2])
-    b, a = np.polyfit(train[num1], train[num2], deg=1)
-    plt.plot(train[num1], a + b * train[num1], color="k", lw=2.5,label="Regression Line")
+    m, b = np.polyfit(train[num1], train[num2], deg=1)
+    plt.plot(train[num1], b + m * train[num1], color="k", lw=2.5,label=f"regression line - f(x)={round(m,5)}x+{round(b,0)}")
     plt.xlabel(num1)
     plt.ylabel(num2)
     plt.xticks(np.arange(1_100_001,step=100_000), ["0","100k","200k","300k","400k","500k","600k","700k","800k","900k","1,000K","1,100K"],
