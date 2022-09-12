@@ -217,7 +217,7 @@ def chi2_for_two(col1,col2):
     plt.figure(figsize=(12, 6))
 
     plt.scatter(col1+xnoise,col2+ynoise,alpha=.1)
-    plt.plot(x,m*x+b,label=f"regression line - f(x)={round(m,0)}x+{round(b,0)}",color="red")
+    plt.plot(x,m*x+b,label=f"regression line - f(x)={round(m,1)}x+{round(b,1)}",color="red")
 
     plt.ylabel(f"{col2.name}")
     plt.xlabel(f"{col1.name}")
