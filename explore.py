@@ -180,7 +180,7 @@ def heatmap_corr(train):
                     #annot=True,
                     **kwargs
                     )
-    plt.title("Is there features that correlate higher than others?")
+    plt.title("Are there features that correlate higher than others?")
     plt.show()
 
 
